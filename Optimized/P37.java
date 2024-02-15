@@ -1,3 +1,10 @@
+//    A
+//   ABA
+//  ABCBA
+// ABCDCBA
+//  ABCBA
+//   ABA
+//    A
 package Optimized;
 
 public class P37 {
@@ -18,8 +25,7 @@ public class P37 {
 
             count = 1;
 
-            for (int j = 1; j <= n + row - 1; j++) {
-                if (row <= n) {
+            for (int j = 1; j <= n + row - 1; j++) {       
                     if (row + j < n + 1) {
                         System.out.print(" ");
                     } else {
@@ -30,18 +36,6 @@ public class P37 {
                             count--;
                         }
                     }
-                } else {
-                    if (row + j < n + 1) {
-                        System.out.print(" ");
-                    } else {
-                        System.out.print((char) (65 + count - 1));
-                        if (j < n) {
-                            count++;
-                        } else {
-                            count--;
-                        }
-                    }
-                }
             }
             System.out.println();
         }

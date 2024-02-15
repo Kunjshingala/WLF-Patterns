@@ -1,27 +1,27 @@
-import java.util.Scanner;
-
+//      1
+//     121
+//    12321
+//   1234321
+//  123454321
 public class P17 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
+        int n = 5;
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 1; i <= n; i++) {
             int count = 1;
-            for (int j = n; j > i; j--) {
-                System.out.print(" ");
-            }
-            for (int j = 0; j < 2 * i + 1; j++) {
-                if (j <= i - 1) {
-                    System.out.print(count);
-                    count++;
+            for (int j = 1; j <= n + i - 1; j++) {
+                if (i + j < n + 1) {
+                    System.out.print(" ");
                 } else {
                     System.out.print(count);
-                    count--;
+                    if (j < n) {
+                        count++;
+                    } else {
+                        count--;
+                    }
                 }
             }
             System.out.println();
         }
-        sc.close();
-        return;
     }
 }

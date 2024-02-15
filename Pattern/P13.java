@@ -1,19 +1,19 @@
-import java.util.Scanner;
-
+// 54321
+// 4321
+// 321
+// 21
+// 1
 public class P13 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
+        int n = 5;
         int count = n;
-        for (int i = 0; i < n; i++) {
-            count = n;
-            for (int j = i; j < n; j++) {
-                System.out.print(count - i);
+        for (int i = n; i >= 1; i--) {
+            count = i;
+            for (int j = 1; j <=i; j++) {
+                System.out.print(count);
                 count--;
             }
             System.out.println();
         }
-        sc.close();
-        return;
     }
 }

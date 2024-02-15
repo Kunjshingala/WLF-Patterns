@@ -1,6 +1,15 @@
+//      1
+//     121
+//    12321
+//   1234321
+//  123454321
+//   1234321
+//    12321
+//     121
+//      1
 public class P36 {
     public static void main(String[] args) {
-        int n = 4;
+        int n = 5;
         for (int i = 0; i < n; i++) {
             for (int j = i; j < n; j++) {
                 System.out.print(" ");

@@ -1,3 +1,7 @@
+// * * * * * * * 
+// * * * * * 
+// * * * 
+// * 
 public class P67 {
     public static void main(String[] args) {
         int fre = 7;
@@ -5,8 +9,8 @@ public class P67 {
         int n = (fre / 2) + 1;
         System.out.println(n);
 
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < 2 * (n - i) - 1; j++) {
+        for (int i = n; i >= 1; i--) {
+            for (int j = 1; j <= 2 * i - 1; j++) {
                 System.out.print("*");
             }
             System.out.println();

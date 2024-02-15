@@ -1,3 +1,7 @@
+// 1
+// 123
+// 12345
+// 1234567
 public class P73 {
     public static void main(String[] args) {
         int n = 4;

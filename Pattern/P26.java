@@ -1,16 +1,27 @@
+// I
+// IN
+// IND
+// INDI
+// INDIA
+// INDIA
+// INDI
+// IND
+// IN
+// I
 public class P26 {
     public static void main(String[] args) {
         String str = "INDIA";
-        
-        for (int i = 0; i < 2 * str.length(); i++) {
-            if (i < str.length()) {
-                for (int j = 0; j <= i; j++) {
-                    System.out.print(str.charAt(j));
-                }
-            } else if (i >= str.length()) {
-                for (int j = i; j < 2 * (str.length()); j++) {
-                    System.out.print(str.charAt(j-i));
-                }
+        int row;
+        int n = str.length();
+
+        for (int i = 1; i <= 2 * n; i++) {
+            if (i <= n) {
+                row = i;
+            } else {
+                row = 2 * n - i + 1;
+            }
+            for (int j = 1; j <=row; j++) {
+                System.out.print(str.charAt(j-1));
             }
             System.out.println();
         }

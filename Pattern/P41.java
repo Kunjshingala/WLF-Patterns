@@ -1,18 +1,26 @@
+// A
+// BB
+// CCC
+// DDDD
+// CCC
+// BB
+// A
 public class P41 {
     public static void main(String[] args) {
-        char ch = 'e';
+        char ch = 'd';
         char c = Character.toUpperCase(ch);
         int n = c - 65 + 1;
+        int row, count;
 
-        for (int i = 0; i < n; i++) {
-            for (int j = i; j >= 0; j--) {
-                System.out.print((char) (65 + j ));
+        for (int i = 1; i <= 2 * n - 1; i++) {
+            if (i <= n) {
+                row = i;
+            } else {
+                row = 2 * n - i;
             }
-            System.out.println();
-        }
-        for (int i = 1; i < n; i++) {            
-            for (int j = n - i ; j > 0; j--) {
-                System.out.print((char) (65 + j - 1));
+            count = row;
+            for (int j = 1; j <= row; j++) {
+                System.out.print((char) (65 + count - 1));
             }
             System.out.println();
         }

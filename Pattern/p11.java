@@ -1,19 +1,16 @@
-import java.util.Scanner;
-
+// 12345
+// 1234
+// 123
+// 12
+// 1
 public class p11 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int count;
-        for (int i = 0; i < n; i++) {
-            count = 1;
-            for (int j = i; j < n; j++) {
-                System.out.print(count);
-                count++;
+        int n = 5;
+        for (int i = n; i >= 1; i--) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(j);
             }
             System.out.println();
         }
-        sc.close();
-        return;
     }
 }

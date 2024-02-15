@@ -1,18 +1,21 @@
+//  **** 
+// *    *
+// *    *
+//  **** 
 public class P78 {
     public static void main(String[] args) {
         int m = 4;
-        int n = 4;
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                if ((i == 0 && j == 0) || (i == 0 && j == n - 1) || (i == m - 1 && j == 0)
-                        || (i == m - 1 && j == n - 1)) {
+        int n = 6;
+        for (int i = 1; i <= m; i++) {
+            for (int j = 1; j <= n; j++) {
+                if ((i == 1 && (j == 1 || j == n)) || ((i == m && (j == 1 || j == n)))) {
                     System.out.print(" ");
-
-                } else if (i == 0 || i == m - 1 || j == 0 || j == n - 1) {
+                } else if (i == 1 || i == m || j == 1 || j == n) {
                     System.out.print("*");
-                } else {
+                }else{
                     System.out.print(" ");
                 }
+
             }
             System.out.println();
         }

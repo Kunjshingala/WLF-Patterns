@@ -1,3 +1,8 @@
+// 1
+// 01
+// 010
+// 1010
+// 10101
 public class P76 {
     public static void main(String[] args) {
         int n = 5;

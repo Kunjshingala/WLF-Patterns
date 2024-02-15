@@ -1,4 +1,10 @@
-
+//    1
+//   212
+//  32123
+// 4321234
+//  32123
+//   212
+//    1
 package Optimized;
 
 public class P35 {
@@ -12,8 +18,7 @@ public class P35 {
                 row = 2 * n - i;
             }
             count = n;
-            for (int j = 1; j <= n + row - 1; j++) {
-                if (i <= n) {
+            for (int j = 1; j <= n + row - 1; j++) {         
                     if (row + j < n + 1) {
                         System.out.print(" ");
                     } else {
@@ -24,18 +29,6 @@ public class P35 {
                     } else {
                         count++;
                     }
-                } else {
-                    if (row + j < n + 1) {
-                        System.out.print(" ");
-                    } else {
-                        System.out.print(count);
-                    }
-                    if (j < n) {
-                        count--;
-                    } else {
-                        count++;
-                    }
-                }
             }
             System.out.println();
         }

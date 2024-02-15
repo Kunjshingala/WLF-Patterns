@@ -1,5 +1,11 @@
+//    1
+//   121
+//  12321
+// 1234321
+//  12321
+//   121
+//    1
 package Optimized;
-
 public class P36 {
     public static void main(String[] args) {
         int n = 4;
@@ -13,8 +19,7 @@ public class P36 {
             }
 
             int count = 1;
-            for (int j = 1; j <= n + row - 1; j++) {
-                if (row <= n) {
+            for (int j = 1; j <= n + row - 1; j++) {      
                     if (row + j < n + 1) {
                         System.out.print(" ");
                     } else {
@@ -24,19 +29,7 @@ public class P36 {
                         } else {
                             count--;
                         }
-                    }
-                } else {
-                    if (row + j < n + 1) {
-                        System.out.print(" ");
-                    } else {
-                        System.out.print(count);
-                        if (j < n) {
-                            count++;
-                        } else {
-                            count--;
-                        }
-                    }
-                }
+                    }             
             }
             System.out.println();
         }

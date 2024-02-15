@@ -1,3 +1,8 @@
+// 1
+// 01
+// 101
+// 0101
+// 10101
 public class P77 {
     public static void main(String[] args) {
         int n = 5;

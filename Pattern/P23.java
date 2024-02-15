@@ -1,19 +1,25 @@
+//      A
+//     ABA
+//    ABCBA
+//   ABCDCBA
+//  ABCDEDCBA
 public class P23 {
     public static void main(String[] args) {
         int n = 5;
+        int count;
 
-        for (int i = 0; i < n; i++) {
-            char ch = 'A';
-            for (int j = i; j < n; j++) {
-                System.out.print(" ");
-            }
-            for (int j = 0; j < (2 * i) + 1; j++) {
-                if (j < i) {
-                    System.out.print(ch);
-                    ch++;
+        for (int i = 1; i <= n; i++) {
+            count = 1;
+            for (int j = 1; j <= n + i - 1; j++) {
+                if (i + j < n + 1) {
+                    System.out.print(" ");
                 } else {
-                    System.out.print(ch);
-                    ch--;
+                    System.out.print((char) (65 + count - 1));
+                    if (j < n) {
+                        count++;
+                    } else {
+                        count--;
+                    }
                 }
             }
             System.out.println();

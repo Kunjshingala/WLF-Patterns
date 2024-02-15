@@ -1,10 +1,10 @@
-// // 1234
-// // 341
-// // 12
-// // 3
+// ABCD
+// CDA
+// AB
+// C
 public class P71 {
     public static void main(String[] args) {
-        char ch = 'D';
+        char ch = 'd';
         char c = Character.toUpperCase(ch);
         int n = c - 65 + 1;
         int count;

@@ -1,3 +1,7 @@
+//  ABCDCBA
+//   ABCBA
+//    ABA
+//     A
 public class P39 {
     public static void main(String[] args) {
         char ch = 'd';

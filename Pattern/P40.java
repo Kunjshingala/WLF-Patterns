@@ -1,25 +1,35 @@
+//     A
+//    AB
+//   ABC
+//  ABCD
+// ABCDE
+//  ABCD
+//   ABC
+//    AB
+//     A
 public class P40 {
     public static void main(String[] args) {
 
         char ch = 'e';
         char c = Character.toUpperCase(ch);
         int n = c - 65 + 1;
-        System.out.println(n);
+        int row, count;
 
-        for (int i = 0; i <= 2 * (n - 1); i++) {
-            if (i < n) {
-                for (int j = i; j < n - 1; j++) {
-                    System.out.print(" ");
-                }
-                for (int j = 0; j <= i; j++) {
-                    System.out.print((char) (c - (n - j - 1)));
-                }
+        for (int i = 1; i <= 2 * n - 1; i++) {
+            count = 1;
+
+            if (i <= n) {
+                row = i;
             } else {
-                for (int j = 0; j <= i - n; j++) {
+                row = 2 * n - i;
+            }
+
+            for (int j = 1; j <= n; j++) {
+                if (row + j < n + 1) {
                     System.out.print(" ");
-                }
-                for (int j = 1; j < ((n * 2) - i); j++) {
-                    System.out.print((char) (c - (n - j)));
+                } else {
+                    System.out.print((char) (65 + count - 1));
+                    count++;
                 }
             }
             System.out.println();

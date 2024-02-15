@@ -1,32 +1,29 @@
+// ABCDDCBA
+// ABCCBA
+// ABBA
+// AA
 public class P47 {
-    public class P46 {
-        public static void main(String[] args) {
 
-            char ch = 'f';
-            char c = Character.toUpperCase(ch);
-            int n = c - 65 + 1;
-            System.out.println(n);
-            System.out.println(c);
+    public static void main(String[] args) {
 
-            for (int i = 0; i < n; i++) {
-                int count = 1;
-                for (int j = 0; j < 2 * (n - i); j++) {
+        char ch = 'd';
+        char c = Character.toUpperCase(ch);
+        int n = c - 65 + 1;
+        int count;
 
-                    if (j == (n - i - 1)) {
-                        System.out.print((char) (c - (n - count)) + " ");
-                    } else if (j < (n - i - 1)) {
-                        System.out.print((char) (c - (n - count)) + " ");
-                        count++;
-
-                    } else {
-                        System.out.print((char) (c - (n - count)) + " ");
-                        count--;
-                    }
-
+        for (int i = n; i >= 1; i--) {
+            count = 1;
+            for (int j = 1; j <= 2 * i; j++) {
+                System.err.print((char) (65 + count - 1));
+                if (j < i) {
+                    count++;
+                } else if (j == i) {
+                    continue;
+                } else {
+                    count--;
                 }
-                System.out.println();
             }
+            System.out.println();
         }
     }
-
 }

@@ -1,3 +1,10 @@
+// + 0 0 0 0 0 0 
+// 0 + 0 0 0 0 0 
+// 0 0 + 0 0 0 0 
+// 0 0 0 + 0 0 0 
+// 0 0 0 0 + 0 0 
+// 0 0 0 0 0 + 0 
+// 0 0 0 0 0 0 +
 public class P88 {
 
     public static void main(String[] args) {

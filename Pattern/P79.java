@@ -1,9 +1,12 @@
+// ***
+// * *
+// ***
 public class P79 {
     public static void main(String[] args) {
         int m = 3, n = 3;
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                if (i == 0 || i == m - 1 || j == 0 || j == n - 1) {
+        for (int i = 1; i <= m; i++) {
+            for (int j = 1; j <= n; j++) {
+                if (i == 1 || i == m || j == 1 || j == n) {
                     System.out.print("*");
                 } else {
                     System.out.print(" ");

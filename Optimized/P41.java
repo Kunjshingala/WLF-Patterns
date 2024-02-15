@@ -1,3 +1,12 @@
+// A
+// BA
+// CBA
+// DCBA
+// EDCBA
+// DCBA
+// CBA
+// BA
+// A
 package Optimized;
 
 public class P41 {

@@ -1,3 +1,7 @@
+// ABCDCBA
+//  ABCBA 
+//   ABA  
+//    A
 package Optimized;
 
 public class P39 {

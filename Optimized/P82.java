@@ -1,3 +1,6 @@
+// * *** *** *
+// ** ** ** **
+// *** * * ***
 package Optimized;
 
 public class P82 {
@@ -7,7 +10,6 @@ public class P82 {
 
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= 2 * (n + 1) + 3; j++) {
-                // System.out.print(i + "," + j + " ");
 
                 if ((i + j == (2 * i) + 1) || (j == 2 * n) || (i + j == (4 * n) - 1)) {
                     System.out.print(" ");

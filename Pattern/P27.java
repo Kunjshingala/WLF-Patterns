@@ -1,24 +1,26 @@
+// A
+// BB
+// CCC
+// DDDD
+// CCC
+// BB
+// A
 public class P27 {
     public static void main(String[] args) {
-        char ch = 'E';
-        Character.toUpperCase(ch);
-        int n = ch - 65;
+        char ch = 'd';
+        char c = Character.toUpperCase(ch);
+        int n = c - 65 + 1;
+        int row;
 
-        for (int i = 0; i < (2 * n) + 1; i++) {
+        for (int i = 1; i <= (2 * n) - 1; i++) {
             if (i <= n) {
-                for (int j = 0; j <= i; j++) {
-
-                    char k = (char) (ch - (n - i));
-                    System.out.print(k + " ");
-
-                }
+                row = i;
             } else {
-                for (int j = (2 * n) - i; j >= 0; j--) {
+                row = 2 * n - i;
+            }
 
-                    char k = (char) (ch - (i - n));
-                    System.out.print(k + " ");
-
-                }
+            for (int j = 1; j <= row; j++) {
+                System.out.print((char) (65 + row - 1));
             }
             System.out.println();
         }

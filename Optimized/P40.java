@@ -1,8 +1,17 @@
+//     A
+//    AB
+//   ABC
+//  ABCD
+// ABCDE
+//  ABCD
+//   ABC
+//    AB
+//     A
 package Optimized;
 
 public class P40 {
     public static void main(String[] args) {
-        int n = 5;
+        int n = 4;
         int count;
         int row;
         for (int i = 1; i <= 2 * n - 1; i++) {
@@ -14,21 +23,12 @@ public class P40 {
                 row = (2 * n) - i;
             }
 
-            for (int j = 1; j <= 5; j++) {
-                if (i <= n) {
-                    if (i + j <= n) {
-                        System.out.print(" ");
-                    } else {
-                        System.out.print((char) (65 + count - 1));
-                        count++;
-                    }
+            for (int j = 1; j <= n; j++) {
+                if (row + j <= n) {
+                    System.out.print(" ");
                 } else {
-                    if (row + j <= n) {
-                        System.out.print(" ");
-                    } else {
-                        System.out.print((char) (65 + count - 1));
-                        count++;
-                    }
+                    System.out.print((char) (65 + count - 1));
+                    count++;
                 }
             }
             System.out.println();
